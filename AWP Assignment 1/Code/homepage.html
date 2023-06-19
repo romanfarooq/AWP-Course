@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page -- {{FirstName}}</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #d83d3d;
+        }
+
+        .avatar {
+            width: 200px;
+            height: 200px;
+            margin: auto;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-bottom: 20px;
+            border: 5px double #8e0000;
+        }
+
+        .avatar img {
+            width: 100%;
+        }
+
+        .info {
+            text-align: center;
+        }
+
+        .info h1 {
+            margin-bottom: 10px;
+            color: #fff;
+        }
+
+        .info p {
+            margin-bottom: 10px;
+            color: #fff;
+        }
+
+        .logout a {
+            position: fixed;
+            top: 0;
+            right: 0;
+            padding: 10px;
+            background-color: #fff;
+            border-radius: 0 0 0 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            cursor: pointer;
+            text-decoration: none;
+            color: #d83d3d;
+            transition: all 0.3s ease;
+        }
+
+        .logout a:hover {
+            background-color: #d83d3d;
+            color: #fff;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="info">
+            <div class="avatar">
+                <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
+                    alt="Empty Profile Picture">
+            </div>
+            <h1>{{FirstName}} {{LastName}}</h1>
+            <p>{{EmailAddress}}</p>
+        </div>
+    </div>
+    <div class="logout">
+        <a href="/">Logout</a>
+    </div>
+</body>
+
+<script>
+    // chnage url to homepage
+    window.history.pushState({}, document.title, "/MyWebApplication/homepage");
+</script>
+
+</html>

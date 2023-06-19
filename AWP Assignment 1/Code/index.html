@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web Application</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #d83d3d;
+        }
+
+        .main {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .main li {
+            list-style: none;
+            float: left;
+        }
+
+        .main a {
+            display: block;
+            height: 50px;
+            margin: 10px;
+            padding: 2px 25px;
+            text-decoration: none;
+            border-radius: 30px;
+            line-height: 45px;
+            color: #fff;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .main li:nth-child(1) a {
+            background: #d83d3d;
+            border: 2px solid #fff;
+        }
+
+        .main li:nth-child(1) a:hover {
+            background: #fff;
+            color: #d83d3d;
+        }
+
+        .main li:nth-child(2) a {
+            background: #9e2c2c;
+            border: 2px solid #9e2c2c;
+        }
+
+        .main li:nth-child(2) a:hover {
+            background: #b13131;
+            border: 2px solid #b13131;
+        }
+    </style>
+</head>
+
+<body>
+    <main class="main">
+        <ul>
+            <li><a class="signin" href="MyWebApplication/signin">Login</a></li>
+            <li><a class="signup" href="MyWebApplication/signup">Sign Up</a></li>
+        </ul>
+    </main>
+</body>
+
+</html>
