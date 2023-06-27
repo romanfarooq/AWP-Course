@@ -5,8 +5,8 @@ import { BookingContext } from "../context/BookingContext";
 const Admin = () => {
   const { bookings, deleteBooking } = useContext(BookingContext);
 
-  const handleDelete = (bookingId) => {
-    deleteBooking(bookingId);
+  const handleDelete = (bookedRoom) => {
+    deleteBooking(bookedRoom);
   };
 
   return (
@@ -35,7 +35,7 @@ const Admin = () => {
                 <td className="border px-4 py-2">
                   <button
                     className="text-red-500"
-                    onClick={() => handleDelete(booking.id)}
+                    onClick={() => handleDelete(booking)}
                   >
                     Delete
                   </button>
