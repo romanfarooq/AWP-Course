@@ -1,4 +1,4 @@
-# Todo App
+# Hotel Management System
 
 **Name :** Roman Farooq  
 **Roll No :** L1F20BSCS0338  
