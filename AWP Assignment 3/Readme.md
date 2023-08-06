@@ -9,7 +9,7 @@
 
 ## Description
 
-This is Assignment 2 for the course Advanced Web Programming and It is simple hotel booking system. It is a single page application built using React and Tailwind CSS. It uses Context API for state management. A customer can book a room and can see the booking details. An admin can see all the bookings and can cancel any booking.
+This is Assignment 3 for the course Advanced Web Programming and It is simple hotel booking system. It is a single page application built using React and Tailwind CSS. It uses Context API for state management. A customer can book a room and can see the booking details. An admin can see all the bookings and can cancel any booking.
 
 ## Installation
 
